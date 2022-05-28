@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> <!--Link bootstrap to this file-->
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary"><!--Liked the darker Nav bar-->
+
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyKGNY3MZUgpahA19RBx_cT9OHntdOafcegw&usqp=CAU" alt="" width="120" height="44">
+            </a>
+          
+
+            <div class="container-fluid">
+            <a class="navbar-brand fs-3" href="index.html">ComicBook Club</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </div>
+        </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-link fs-5" aria-current="page" href="index.html">Home</a> <!--figured out to put the active component on the page you are on-->
+                <a class="nav-link active fs-5" href="contact.html">Contact Us</a> <!--figured out to put the active component on the page you are on-->
+                </div>
+            </div>
+      </nav>
+
+    <main class="container"> <!--needs a container or a div to work the right way-->
+
+        <div class="row mx-auto">
+
+            <div class="row">
+                <div class="col-sm-12 col-md-6 mt-5 mx-auto">
+                    <img src="https://www.elegantthemes.com/blog/wp-content/uploads/2019/07/ben-day-dots-featured-image.jpg" class="img-fluid" alt="pop art WOW">
+                </div>
+
+            <!-- added a list type card for contacts-->
+            <div class="card border border-primary p-2 mb-2 border-opacity-75 mx-auto mt-5 text-center" style="width: 20rem;">
+                <div class="card-header bg-primary text-white ">
+                    Contact Us:
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="#" class="card-link">comicbookclub@gmail.com</a></li>
+                    <li class="list-group-item"><a href="#" class="card-link">facebook.com/comicbookclub</a></li>
+                    <li class="list-group-item"><a href="#" class="card-link">instagram.com/comicbookclub</a></li>
+                    <li class="list-group-item"><a href="#" class="card-link">twitter/comicbookclub</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="row mx-auto">
+            <!--Added a form for users to sign up for the newsletter-->
+            <div class="col-sm-12 col-md-6 mx-auto">
+                <h3 class="mt-5 text-center">Sign up for our Newsletter</h3>
+                <form class="border border-primary p-2 mb-2 mt-3"> <!--Added a form-->
+                    <div class="mb-3">
+                        <div class="mb-3">
+                            <label for="InputName1" class="form-label">Name</label>
+                            <input class="form-control" type="text" placeholder="First & Last" aria-label="First Last">
+                        </div>
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        <div id="emailHelp" class="form-text mt-2">We'll never share your email with anyone else.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign me up</button>
+                </form>
+            </div>
+        </div> 
+    </main>
+        <!--Footer-->
+    <div class="fixed- bottom bg-primary p-3 mt-5"> 
+        <p class="text-center text-white fs-5">ComicBook Club</p>
+    </div>
+
+<!--links to JS-->
+<script src="node_module/jquery/dist/jquery.js"></script>
+<script src="node_module/bootstrap/dist/je/bootstrap.bundle.js"></script>
+</body>
+</html>
